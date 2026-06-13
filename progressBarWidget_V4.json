@@ -1,0 +1,33 @@
+{
+  "id": "com.max.progressbar",
+  "version": "1.0.0",
+  "name": "Business Entity Progress Bar",
+  "newInstancePrefix": "ProgressBar",
+  "vendor": "MAX",
+
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-progressbar",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGET_SAP_SAC@main/progressBarWidget_V4.js",
+      "integrity": "sha384-DJ7uNPCSQt7sCxJhpHXK9xsPwfmDEyzT8aekcTnSha8dr1X1Mpshnb8Sot0eZhcX"
+    }
+  ],
+
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Business Entity"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Billing Amount"
+        }
+      ]
+    }
+  }
+}
