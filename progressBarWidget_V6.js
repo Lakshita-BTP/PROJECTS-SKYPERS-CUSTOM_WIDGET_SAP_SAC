@@ -116,7 +116,7 @@
           return;
         }
 
-        const maxValue = Math.max(...data.map((x) => x.value));
+        const totalValue = data.reduce((sum, item) => sum + item.value, 0);
 
         const colors = ["#344f6d", "#f08a3c", "#d4b06a", "#9fb2c6", "#5b7c99"];
 
@@ -124,7 +124,7 @@
 
         data.forEach((item, index) => {
           const percent =
-            maxValue > 0 ? ((item.value / maxValue) * 100).toFixed(1) : 0;
+            totalValue > 0 ? ((item.value / totalValue) * 100).toFixed(1) : 0;
 
           html += `
             <div class="row">
@@ -145,7 +145,10 @@
               </div>
 
               <div class="value">
-                ${item.value.toLocaleString()}
+                ${valueCr.toLocaleString(undefined, {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })} Cr
               </div>
 
             </div>
