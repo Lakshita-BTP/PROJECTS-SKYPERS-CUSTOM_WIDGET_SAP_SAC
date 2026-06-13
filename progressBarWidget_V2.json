@@ -1,0 +1,27 @@
+{
+  "id": "com.max.progressbar",
+  "version": "1.0.0",
+  "name": "Business Entity Progress Bar",
+  "newInstancePrefix": "ProgressBar",
+  "vendor": "MAX",
+
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-progressbar",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGET_SAP_SAC@main/progressBarWidget_V2.js",
+      "integrity": "sha384-10gcMzjHUjgu2jhEx7dW7Q89ucnI2vzV4Vuwv1gB4xmKXJRMat/73At+1fdCVbW7",
+      "ignoreIntegrity": false
+    }
+  ],
+
+  "properties": {
+    "data": {
+      "type": "string",
+      "default": "[{\"entity\":\"Company A\",\"value\":100,\"color\":\"#27496d\"}]"
+    }
+  },
+
+  "methods": {},
+  "events": {}
+}
